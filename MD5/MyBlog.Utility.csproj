@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Utility\" />
+    <None Remove="_MD5\" />
+    <None Remove="_AutoMapper\" />
+    <None Remove="Utility\_Filter\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Utility\" />
+    <Folder Include="_MD5\" />
+    <Folder Include="_AutoMapper\" />
+    <Folder Include="Utility\_Filter\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="SqlSugarCore" Version="5.1.4.169" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="8.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyBlog.Model\MyBlog.Model.csproj" />
+  </ItemGroup>
+</Project>

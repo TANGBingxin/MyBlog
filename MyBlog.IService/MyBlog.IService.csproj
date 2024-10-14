@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyBlog.IRepository\MyBlog.IRepository.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="MyBlog.Service\Class1.cs" />
+    <Compile Remove="MyBlog.Service\obj\Debug\net6.0\MyBlog.Service.GlobalUsings.g.cs" />
+    <Compile Remove="MyBlog.Service\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" />
+    <Compile Remove="MyBlog.Service\obj\Debug\net6.0\MyBlog.Service.AssemblyInfo.cs" />
+    <Compile Remove="MyBlog.Service\BlogNewsService.cs" />
+    <Compile Remove="MyBlog.Service\WriterInfo.cs" />
+    <Compile Remove="MyBlog.Service\TypeInfoService.cs" />
+    <Compile Remove="MyBlog.Service\WriterInfoService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="MyBlog.Service\obj\MyBlog.Service.csproj.nuget.g.props" />
+    <None Remove="MyBlog.Service\obj\MyBlog.Service.csproj.nuget.g.targets" />
+    <None Remove="MyBlog.Service\obj\project.assets.json" />
+    <None Remove="MyBlog.Service\obj\project.nuget.cache" />
+    <None Remove="MyBlog.Service\obj\MyBlog.Service.csproj.nuget.dgspec.json" />
+    <None Remove="MyBlog.Service\obj\Debug\net6.0\MyBlog.Service.assets.cache" />
+    <None Remove="MyBlog.Service\obj\Debug\net6.0\MyBlog.Service.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Remove="MyBlog.Service\obj\Debug\net6.0\MyBlog.Service.AssemblyInfoInputs.cache" />
+  </ItemGroup>
+</Project>

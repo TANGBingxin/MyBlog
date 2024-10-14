@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyBlog.Model\MyBlog.Model.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="SqlSugar.IOC" Version="2.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="MyBlog.Repository\WriterInfoRepository.cs" />
+    <Compile Remove="MyBlog.Repository\obj\Debug\net6.0\MyBlog.Repository.AssemblyInfo.cs" />
+    <Compile Remove="MyBlog.Repository\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" />
+    <Compile Remove="MyBlog.Repository\obj\Debug\net6.0\MyBlog.Repository.GlobalUsings.g.cs" />
+    <Compile Remove="MyBlog.Repository\TypeInfoRepository.cs" />
+    <Compile Remove="MyBlog.Repository\BaseRepository.cs" />
+    <Compile Remove="MyBlog.Repository\BlogNewsRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="MyBlog.Repository\obj\MyBlog.Repository.csproj.nuget.g.targets" />
+    <None Remove="MyBlog.Repository\obj\Debug\net6.0\MyBlog.Repository.AssemblyInfoInputs.cache" />
+    <None Remove="MyBlog.Repository\obj\Debug\net6.0\MyBlog.Repository.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Remove="MyBlog.Repository\obj\Debug\net6.0\MyBlog.Repository.assets.cache" />
+    <None Remove="MyBlog.Repository\bin\Debug\net6.0\MyBlog.Repository.dll" />
+    <None Remove="MyBlog.Repository\bin\Debug\net6.0\MyBlog.IRepository.dll" />
+    <None Remove="MyBlog.Repository\bin\Debug\net6.0\MyBlog.Model.pdb" />
+    <None Remove="MyBlog.Repository\bin\Debug\net6.0\MyBlog.IRepository.pdb" />
+    <None Remove="MyBlog.Repository\bin\Debug\net6.0\MyBlog.Model.dll" />
+    <None Remove="MyBlog.Repository\bin\Debug\net6.0\MyBlog.Repository.deps.json" />
+    <None Remove="MyBlog.Repository\obj\Debug\net6.0\MyBlog.Repository.dll" />
+    <None Remove="MyBlog.Repository\obj\Debug\net6.0\MyBlog.Repository.csproj.CoreCompileInputs.cache" />
+    <None Remove="MyBlog.Repository\obj\Debug\net6.0\MyBlog.Repository.pdb" />
+    <None Remove="MyBlog.Repository\obj\Debug\net6.0\MyBlog.Repository.csproj.FileListAbsolute.txt" />
+    <None Remove="MyBlog.Repository\obj\Debug\net6.0\ref\MyBlog.Repository.dll" />
+    <None Remove="MyBlog.Repository\obj\Debug\net6.0\refint\MyBlog.Repository.dll" />
+    <None Remove="MyBlog.Repository\bin\Debug\net6.0\MyBlog.Repository.pdb" />
+    <None Remove="MyBlog.Repository\obj\MyBlog.Repository.csproj.nuget.dgspec.json" />
+    <None Remove="MyBlog.Repository\obj\MyBlog.Repository.csproj.nuget.g.props" />
+    <None Remove="MyBlog.Repository\obj\project.assets.json" />
+    <None Remove="MyBlog.Repository\obj\project.nuget.cache" />
+    <None Remove="MyBlog.Repository\obj\Debug\net6.0\MyBlog.Repository.csproj.AssemblyReference.cache" />
+    <None Remove="MyBlog.Repository\obj\Debug\net6.0\MyBlog.Repository.csproj.CopyComplete" />
+  </ItemGroup>
+</Project>
